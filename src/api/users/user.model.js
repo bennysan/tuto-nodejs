@@ -1,6 +1,6 @@
 const Joi = require("joi");
 const db = require("../database");
-const { getHash } = require("../utils");
+const { getHash } = require("../utils/bcript");
 
 const userSchema = Joi.object({
   username: Joi.string().alphanum().min(3).max(30),

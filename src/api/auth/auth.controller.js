@@ -4,7 +4,7 @@ const {
   createUser,
   findOneByEmail,
 } = require("../users/user.model");
-const { getHash, comparePass } = require("../utils");
+const { getHash, comparePass } = require("../utils/bcript");
 
 const register = async (req, res, next) => {
   const value = await userSchema.validateAsync(req.body);
